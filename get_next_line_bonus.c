@@ -48,7 +48,7 @@ char	*get_next_line(int fd)
 	int		start;
 
 	start = 0;
-	if (!check_fd_isvalid(fd))
+	if (fd < 0 || fd >= MAX_FD)
 		return (NULL);
 	buff = malloc(BUFFER_SIZE + 1);
 	if (!buff)

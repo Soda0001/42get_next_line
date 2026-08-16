@@ -6,7 +6,7 @@
 /*   By: sedeniz <sedeniz@student.42istanbul.com.t  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/12 15:06:45 by sedeniz           #+#    #+#             */
-/*   Updated: 2026/08/16 16:38:18 by sedeniz          ###   ########.fr       */
+/*   Updated: 2026/08/16 22:50:17 by sedeniz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,10 +39,7 @@ int	find_nl(char *str, int start)
 
 	if (!str)
 		return (-1);
-	if (!start)
-		start = 0;
-	else
-		i = start;
+	i = start;
 	while (str[i] && str[i] != '\n')
 	{
 		i++;

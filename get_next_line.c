@@ -60,8 +60,6 @@ char	*read_until_nl(char **storage, char *buff, int fd, int start)
 		temp = ft_strjoin(*storage, buff);
 		free(*storage);
 		*storage = temp;
-		if (!*storage)
-			return (NULL);
 		pos_nl = find_nl(*storage, start);
 		if (pos_nl >= 0)
 			return (extract_line(storage, pos_nl));

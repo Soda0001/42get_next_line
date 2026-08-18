@@ -6,7 +6,7 @@
 /*   By: sedeniz <sedeniz@student.42istanbul.com.tr +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/16 20:20:30 by sedeniz           #+#    #+#             */
-/*   Updated: 2026/08/18 12:18:35 by sedeniz          ###   ########.tr       */
+/*   Updated: 2026/08/18 12:34:45 by sedeniz          ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,7 +97,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	final_str = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
 	if (!final_str)
 		return (NULL);
-		i = 0;
+	i = 0;
 	while (s1[i])
 	{
 		final_str[i] = s1[i];

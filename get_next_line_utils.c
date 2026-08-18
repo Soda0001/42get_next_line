@@ -97,7 +97,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	final_str = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
 	if (!final_str)
 		return (NULL);
-		i = 0;
+	i = 0;
 	while (s1[i])
 	{
 		final_str[i] = s1[i];

@@ -6,7 +6,7 @@
 /*   By: sedeniz <sedeniz@student.42istanbul.com.tr +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/16 21:01:26 by sedeniz           #+#    #+#             */
-/*   Updated: 2026/08/18 12:17:56 by sedeniz          ###   ########.tr       */
+/*   Updated: 2026/08/18 12:36:06 by sedeniz          ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,8 +60,6 @@ char	*read_until_nl(char **storage, char *buff, int fd, int start)
 		temp = ft_strjoin(*storage, buff);
 		free(*storage);
 		*storage = temp;
-		if (!*storage)
-			return (NULL);
 		pos_nl = find_nl(*storage, start);
 		if (pos_nl >= 0)
 			return (extract_line(storage, pos_nl));
